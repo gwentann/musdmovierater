@@ -38,6 +38,31 @@
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Reviews"
+    />
+    <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/movierate"
+            android:visibility="gone"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/movieview"
+            android:visibility="gone"
+            android:textSize="20dp"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Reviews yet.\nLong press here to add your review."
+            android:textSize="20dp"
+            android:id="@+id/addReview"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Language:"
     />
     <TextView

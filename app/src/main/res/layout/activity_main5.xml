@@ -6,15 +6,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".MainActivity">
-
+        tools:context=".Main5Activity">
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Name"
     />
     <EditText
-            android:id="@+id/movie_name"
+            android:id="@+id/moviename"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter the title of movie"
@@ -25,7 +24,7 @@
             android:text="Description"
     />
     <EditText
-            android:id="@+id/movie_desc"
+            android:id="@+id/moviedesc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter a short description of the movie"
@@ -36,30 +35,30 @@
             android:text="Language"
     />
     <RadioGroup
-            android:id="@+id/movie_language"
+            android:id="@+id/movielanguage"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         <RadioButton
-                android:id="@+id/lang_eng"
+                android:id="@+id/langeng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="English"
         />
         <RadioButton
-                android:id="@+id/lang_chi"
+                android:id="@+id/langchi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Chinese"
         />
         <RadioButton
-                android:id="@+id/lang_malay"
+                android:id="@+id/langmalay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Malay"
         />
         <RadioButton
-                android:id="@+id/lang_tamil"
+                android:id="@+id/langtamil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tamil"
@@ -72,14 +71,13 @@
             android:text="Release date"
     />
     <EditText
-            android:id="@+id/movie_date"
+            android:id="@+id/moviedate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter release date"
-            android:inputType="date"
     />
     <CheckBox
-            android:id="@+id/checkBoxNotSuit"
+            android:id="@+id/checkBox_NotSuit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Not suitable for all audience"
@@ -89,20 +87,20 @@
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-    <CheckBox
-            android:visibility="invisible"
-            android:id="@+id/checkBoxViolence"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Violence"
-    />
-    <CheckBox
-            android:visibility="invisible"
-            android:id="@+id/checkboxLanguage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Language used"
-    />
+        <CheckBox
+                android:visibility="invisible"
+                android:id="@+id/checkBox_Violence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Violence"
+        />
+        <CheckBox
+                android:visibility="invisible"
+                android:id="@+id/checkbox_Language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Language used"
+        />
     </LinearLayout>
 
     <LinearLayout
@@ -110,4 +108,5 @@
             android:layout_height="match_parent"
     >
     </LinearLayout>
+
 </LinearLayout>
